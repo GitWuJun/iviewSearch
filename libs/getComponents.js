@@ -1,3 +1,5 @@
+const baseUrl = 'https://www.iviewui.com';
+
 function getComponents(keyWord,dataSource){
     let resultArr = [];
     if (keyWord) {
@@ -10,7 +12,7 @@ function getComponents(keyWord,dataSource){
                             title:item.title,
                             subtitle:item.title,
                             icon:item.icon,
-                            arg:item.title
+                            arg:baseUrl+item.path
                         }
                         resultArr.push(resultItem);
                     }
